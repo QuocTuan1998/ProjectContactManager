@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTen"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTen"
+        android:id="@+id/txtPhone"
+        android:textSize="20dp"
+        android:textColor="#FF0000"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPhone"
+        android:background="@drawable/call"
+        android:id="@+id/btnCall"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPhone"
+        android:layout_toRightOf="@id/btnCall"
+        android:background="@drawable/sms"
+        android:id="@+id/btnSms"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPhone"
+        android:layout_toRightOf="@id/btnSms"
+        android:background="@drawable/delete"
+        android:id="@+id/btnDelete"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCall"
+        android:height="2dp"
+        android:background="#004000"
+        />
+
+</RelativeLayout>
